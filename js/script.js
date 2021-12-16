@@ -1,19 +1,12 @@
 
 
 const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector("nav");
-const socialIcons = document.querySelector(".social-icons");
 const mobileNavigation = document.querySelector(".navigation-mobile")
 
 hamburger.onclick = function () {
     mobileNavigation.classList.toggle("show-nav-mobile");
-    // nav.classList.toggle("show-nav")
-    // if (socialIcons.style.display === "flex") {
-    //     socialIcons.style.display = "none"
-    // } else {
-    //     socialIcons.style.display = "flex";
-    // }
 }
+
 // onclick button event which takes user to top of page
 const toTopBtn = document.querySelector(".to-top");
 toTopBtn.onclick = function () {
