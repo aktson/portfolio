@@ -29,7 +29,6 @@ body {
     "footer footer footer footer footer footer";
   overflow-x: hidden;
   position: relative;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: var(--light);
   background: url("/images/main-bg.svg") no-repeat center left;
   background-size: cover;

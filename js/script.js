@@ -49,11 +49,10 @@ const rectSkillsSection = skillsSection.getBoundingClientRect();
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > rectSitesWrapper.top) {
-        setTimeout(() => { allSitesSection.classList.add("slide-up") }, 300);
+        allSitesSection.classList.add("slide-up");
     }
 
     if (window.scrollY > rectSkillsSection.top) {
-        setTimeout(() => { skillsSection.classList.add("add-opacity") }, 300);
+        skillsSection.classList.add("add-opacity");
     }
-
 })
