@@ -49,7 +49,7 @@ const rectSkillsSection = skillsSection.getBoundingClientRect();
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > rectSitesWrapper.top) {
-        allSitesSection.classList.add("slide-up");
+        allSitesSection.classList.add("add-opacity");
     }
 
     if (window.scrollY > rectSkillsSection.top) {

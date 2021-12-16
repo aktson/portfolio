@@ -334,7 +334,10 @@ button:hover {
   display: inline-block;
   margin-left: 20px;
 }
-
+.all-sites {
+  opacity: 0;
+  transition: 1s opacity;
+}
 /* skills section */
 .skills {
   align-items: center;
@@ -356,15 +359,7 @@ button:hover {
 .skills-content .fas {
   font-size: 2.2em;
 }
-.all-sites {
-  transform: translateY(50%);
-  opacity: 0;
-  transition: 1s transform;
-}
-.slide-up {
-  transform: translateY(0%);
-  opacity: 1;
-}
+
 .add-opacity {
   opacity: 1;
 }
