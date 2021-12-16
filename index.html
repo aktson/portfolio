@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Home | Ankit Soni</title>
+  </head>
+  <body>
+    <header class="flex">
+      <!-- site logo -->
+      <img src="/images/logo3.svg" alt="site logo" id="logo" />
+      <!-- site navigation -->
+
+      <nav class="pc-navigation">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+      <!-- social icons -->
+      <div class="social-icons pc-navigation">
+        <a href="https://www.facebook.com/ankitsoni86" target="_blank" aria-label="link to author's facebook page">
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://www.instagram.com/ankt8soni" target="_blank" aria-label="link to author's instagram page">
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="mailto:akt_soni@yahoo.co.in" aria-label="link to author's e-mail address">
+          <span><i class="fas fa-envelope"></i></span>
+        </a>
+      </div>
+      <!-- hamburger bars -->
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </header>
+    <section class="intro-wrapper">
+      <div class="intro">
+        <h1 class="heading-intro">
+          Hi, I am Ankit
+          <br />
+          Student at Front-end developer
+        </h1>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <main>
+      <!-- h2. intro and all sites wrapper -->
+      <section class="sites-wrapper grid-one-column">
+        <!-- section heading  -->
+        <h2>Some Things I've Built</h2>
+        <div>
+          <p>
+            During my first year as front-end developer student, I have been building some sites for different subjects. and has been improved through
+            out my first year.
+          </p>
+          <p>
+            SquareEyes for movies purchase was my first project at start of my studies , then I went on to built Community science museum site, an
+            informational site for newly opened museum in town.
+          </p>
+          <p>And third one being, personal blogging website which focuses on fetching data from wordpress rest-api.</p>
+        </div>
+        <!-- section wrapper for all sites -->
+        <section class="all-sites">
+          <!-- button to show different sites -->
+          <div class="tabs">
+            <button class="tab-button active-tab" onclick="showTab(event,'ankson')">Ankson blog</button>
+            <button class="tab-button" onclick="showTab(event,'community')">Community science museum</button>
+            <button class="tab-button" onclick="showTab(event,'squareeyes')">Squareeyes</button>
+          </div>
+
+          <!-- site one wrapper section -->
+          <section class="site-one-wrapper flex tab-content" id="ankson">
+            <h3>Project exam one - AnkSon blog</h3>
+            <!-- external links to github and site -->
+            <div>
+              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-aktson" target="_blank">
+                <i class="fab fa-github">Github</i>
+              </a>
+              <a href="https://ankson-blog.netlify.app/" target="_blank">
+                <i class="fas fa-external-link-alt">Website</i>
+              </a>
+            </div>
+            <!-- site image -->
+            <img src="/images/ankson-blog.jpg" alt=" stacked images ankson-blog site" />
+            <!-- site content -->
+            <div>
+              <h4>Latest updates</h4>
+              <p>
+                I managed to get to function level process 2 where we was tasked to collect user data and add search option when I delivered project.
+                Basically, I am really satisfied with design, functionality and user experience for Project exam "ankson-blog". Some big changes were
+                made during production, which eventually improved functionality. So not much I have worked on this project. Since I am also didn't get
+                teacher feedback for exam.
+              </p>
+              <p>
+                One thing which I would like to work further on , is to get easilly submitted e-mail for subscribe section. Which unfortunately, I
+                didn't find a way to do it. I did use contact form 7 to collect form data but didnot find any specific routes on wordpress rest-api
+              </p>
+            </div>
+          </section>
+
+          <!-- Site two wrapper -->
+          <section class="site-two-wrapper grid-one-column tab-content" id="community">
+            <h3>Semester exam -Community Science Museum</h3>
+            <!-- external links to github and site -->
+            <div>
+              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-aktson" target="_blank">
+                <i class="fab fa-github">Github</i>
+              </a>
+              <a href="https://communitysm.netlify.app/" target="_blank">
+                <i class="fas fa-external-link-alt">Website</i>
+              </a>
+            </div>
+            <!-- site image -->
+            <img src="/images/community.jpg" alt="stacked images of community science Museum site" />
+            <!-- site content -->
+            <div>
+              <h4>Latest updates</h4>
+              <ul>
+                <li>Background color in header</li>
+                <li>Padding in header</li>
+                <li>Dropdown menu for navgiation</li>
+                <li>Growing line on hover</li>
+              </ul>
+            </div>
+            <div>
+              <h4>why updates were necessary</h4>
+              <p>
+                I thought header looked quite busy with background color and not so much breathing space. I felt, I should try to improve somehow .
+                Another aspect was growing line on hover, got lots os attention because of being quite thick. While last changes were to reduce nav
+                items in header sections. I felt again that was too much going on in header section
+              </p>
+            </div>
+            <div>
+              <h4>How changes were Implemented</h4>
+              <p>
+                First removed background color and kept rather plain white background and then added some padding to give that enough room which
+                needed for elements. Then I went on to add dropdown menu to further reduce menu items in nav section. Mouse over event to keep to
+                minimal while keeping user informed that there are more sub-menus in header.
+              </p>
+              <p>Growing line on hover was thinned out to reduce direct attention rather keeping it simple animation going.</p>
+            </div>
+          </section>
+
+          <!-- Site three wrapper -->
+          <section class="site-three-wrapper grid-one-column tab-content" id="squareeyes">
+            <h3>Cross course assignment SquareEyes</h3>
+            <!-- external links to github and site -->
+            <div>
+              <a href="https://github.com/aktson/squareeyes" target="_blank">
+                <i class="fab fa-github">Github</i>
+              </a>
+              <a href="https://squareeyesnet.netlify.app/" target="_blank">
+                <i class="fas fa-external-link-alt">Website</i>
+              </a>
+            </div>
+            <!-- site image -->
+            <img src="/images/squareeyes.jpg" alt="stacked images squareeyes site" />
+            <!-- site content -->
+            <div>
+              <h4>Latest updates</h4>
+              <ul>
+                <li>Contact page</li>
+                <li>Comments on html and js files</li>
+                <li>Transition properties</li>
+              </ul>
+            </div>
+            <div>
+              <h4>why updates were necessary</h4>
+              <p>
+                As a user, you must be able to contact site owner for possible feedback or queries. Which I didn't thought about when designing site.
+                So contact page was necessary. After going back to redesign , I felt that it was hard to read codes in html and js files, particulary
+                what or where they belong to. So description or commenting was necessary for readability. Some other issues, I came up with was
+                snapping back which kinda didn't feel smooth user experience.
+              </p>
+            </div>
+
+            <div>
+              <h4>How changes were Implemented</h4>
+              <p>
+                As per teachers feedback, contact page was missing for site.I adde contact page and I did n't find place for button in navigation,
+                since it was actually part of design. So I added button in footer which takes user to contact form. I further went on to clean up some
+                messy code and added comments on each section, which I helps for readability specially I had lots of content html pages.
+              </p>
+              <p>Some transition properties added, so button did not actually snap back after hovering, which I thinks feels much better.</p>
+            </div>
+          </section>
+        </section>
+        <!-- section ends here for all sites wrapper -->
+      </section>
+      <!-- all sites  and h2 wrapper ends here-->
+
+      <!-- skills section -->
+      <section class="skills">
+        <div class="skills-content grid-three-column">
+          <h2>Tecnology I work with</h2>
+          <!-- inline color style for icons since I found it easiest that way -->
+          <p>
+            <i class="fab fa-html5" style="color: rgb(253, 133, 77)"></i>
+            HTML5
+          </p>
+
+          <p>
+            <i class="fab fa-css3-alt" style="color: rgb(157, 203, 255)"></i>
+            CSS3
+          </p>
+          <p>
+            <i class="fab fa-js" style="color: yellow"></i>
+            Javascript
+          </p>
+          <p>
+            <i class="fab fa-github-square" style="color: rgb(255, 255, 255)"></i>
+            Github
+          </p>
+
+          <p>
+            <i class="fab fa-wordpress" style="color: rgb(0, 182, 243)"></i>
+            Wordpress rest-api
+          </p>
+          <p>
+            <i class="fas fa-user-check" style="color: rgb(158, 247, 162)"></i>
+            Web accessibility
+          </p>
+          <p>
+            <i class="fas fa-paint-roller" style="color: rgb(183, 28, 255)"></i>
+            Adobe XD
+          </p>
+          <p>
+            <i class="fab fa-buromobelexperte" style="color: rgb(248, 172, 217)"></i>
+            Responsive websites
+          </p>
+        </div>
+      </section>
+      <section></section>
+    </main>
+    <!--  footer -->
+    <footer>&copy;2021 Ankit Soni</footer>
+    <!-- button which takes user to top of page -->
+    <div class="to-top">
+      <i class="fas fa-angle-double-up"></i>
+    </div>
+    <!-- mobile navigation -->
+    <div class="navigation-mobile">
+      <nav>
+        <ul class="mobile-ul">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+      <!-- social icons -->
+      <div class="social-icons mobile-social-icons">
+        <a href="https://www.facebook.com/ankitsoni86" target="_blank" aria-label="link to author's facebook page">
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://www.instagram.com/ankt8soni" target="_blank" aria-label="link to author's instagram page">
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="mailto:akt_soni@yahoo.co.in" aria-label="link to author's e-mail address">
+          <span><i class="fas fa-envelope"></i></span>
+        </a>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

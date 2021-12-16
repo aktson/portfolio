@@ -1,0 +1,9 @@
+.intro-wrapper {
+  background-color: var(--primary);
+  color: white;
+}
+
+.fa-arrow-circle-left {
+  font-size: 3em;
+  color: white;
+}

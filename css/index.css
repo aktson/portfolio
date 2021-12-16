@@ -1,0 +1,33 @@
+.heading-intro::after {
+  position: absolute;
+  content: "";
+  padding: 1px;
+  width: 50%;
+  background-color: var(--button);
+  top: 100%;
+  left: 25%;
+  transition: 0.5s transform;
+  animation: 1s forwards flip;
+}
+.heading-intro::before {
+  position: absolute;
+  content: "";
+  padding: 1px;
+  width: 50%;
+  background-color: var(--red);
+  bottom: 100%;
+  left: 25%;
+  transition: 0.5s transform;
+  animation: 1s forwards flip;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
