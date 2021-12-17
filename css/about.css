@@ -4,5 +4,5 @@
 }
 .fa-arrow-circle-left {
   font-size: 3em;
-  color: white;
+  color: var(--red);
 }

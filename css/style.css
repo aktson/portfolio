@@ -6,6 +6,7 @@
   --button-primary: #ccf381;
   --light: #f0f0f0;
   --button: #3a47d5;
+  --light-box-shadow: 2px 2px 24px white;
 }
 
 * {
@@ -30,8 +31,9 @@ body {
   overflow-x: hidden;
   position: relative;
   color: var(--light);
-  background: url("/images/main-bg.svg") no-repeat center left;
+  background: url("/images/bg.svg") no-repeat center left;
   background-size: cover;
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
 }
 
 header {
@@ -65,7 +67,7 @@ p,
 .cta,
 button {
   font-family: "Overpass", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.8em;
 }
 h1 {
@@ -108,14 +110,14 @@ h4 {
 }
 /*  global header */
 header {
-  background: white;
-  padding: 20px;
   position: relative;
   align-items: center;
   gap: 10px;
+  padding: 30px;
 }
+
 #logo {
-  max-width: 120px;
+  width: 50%;
 }
 /* pc navigation */
 ul {
@@ -123,6 +125,7 @@ ul {
   justify-content: center;
   list-style: none;
   gap: 20px;
+  text-align: center;
 }
 nav ul li {
   position: relative;
@@ -130,6 +133,7 @@ nav ul li {
 }
 nav ul li a {
   font-size: 1.3em;
+  color: white;
 }
 nav ul li::before {
   content: "";
@@ -144,7 +148,7 @@ nav ul li::before {
 }
 
 nav ul li:hover::before {
-  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--light-box-shadow);
   border-radius: 8px;
 }
 /* social icons in header section */
@@ -155,20 +159,21 @@ nav ul li:hover::before {
 }
 .social-icons .fab,
 .social-icons .fas {
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 12px;
   border-radius: 50%;
   text-align: center;
+  color: white;
   transition: 0.5s ease;
 }
 .social-icons .fab:hover,
 .social-icons .fas:hover {
-  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--light-box-shadow);
 }
 /* mobile navigation */
 .navigation-mobile {
   position: fixed;
-  width: 150px;
+  width: 125px;
   height: 100vh;
   transform: translateX(-100%);
   transition: 0.5s transform;
@@ -178,7 +183,7 @@ nav ul li:hover::before {
   justify-content: space-evenly;
   padding: 4px;
   font-size: 0.8em;
-  background: white;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 .mobile-ul,
 .mobile-social-icons {
@@ -192,13 +197,12 @@ nav ul li:hover::before {
 .hamburger {
   position: absolute;
   right: 30px;
-  top: 70px;
-  color: black;
-  font-size: 2em;
+  top: 40px;
+  font-size: 1.7em;
   display: none;
 }
 .active {
-  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 24px white;
   border-radius: 8px;
   pointer-events: none;
 }
@@ -206,12 +210,12 @@ nav ul li:hover::before {
 /* intro section */
 .intro-wrapper {
   height: 80vh;
-  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  background: var(--secondary);
+  background: url("/images/main-bg.svg") no-repeat center left;
+  background-size: cover;
 }
 
 .heading-intro {
@@ -258,8 +262,6 @@ nav ul li:hover::before {
 /* global main */
 main {
   position: relative;
-  background: url("/images/main-bg.svg") no-repeat center left;
-  background-size: contain;
   padding: 16px;
 }
 /* wrapper for h2, intro and all sites*/
@@ -377,12 +379,12 @@ footer {
   position: absolute;
   right: 50px;
   bottom: 50px;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: black;
   background-color: var(--button-primary);
   padding: 2px 6px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
 .fa-github,

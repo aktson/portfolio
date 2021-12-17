@@ -5,6 +5,7 @@ const mobileNavigation = document.querySelector(".navigation-mobile")
 
 hamburger.onclick = function () {
     mobileNavigation.classList.toggle("show-nav-mobile");
+
 }
 
 // onclick button event which takes user to top of page

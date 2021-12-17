@@ -1,24 +1,26 @@
 .heading-intro::after {
   position: absolute;
   content: "";
-  padding: 1px;
+  padding: 4px;
   width: 50%;
-  background-color: var(--button);
+  background-color: var(--red);
   top: 100%;
   left: 25%;
   transition: 0.5s transform;
   animation: 1s forwards flip;
+  border-radius: 50%;
 }
 .heading-intro::before {
   position: absolute;
   content: "";
-  padding: 1px;
+  padding: 4px;
   width: 50%;
   background-color: var(--red);
   bottom: 100%;
   left: 25%;
   transition: 0.5s transform;
   animation: 1s forwards flip;
+  border-radius: 50%;
 }
 
 @keyframes flip {
