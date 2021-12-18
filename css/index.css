@@ -3,7 +3,7 @@
   content: "";
   padding: 4px;
   width: 50%;
-  background-color: var(--red);
+  background-color: var(--bg-yellow);
   top: 100%;
   left: 25%;
   transition: 0.5s transform;
@@ -15,7 +15,7 @@
   content: "";
   padding: 4px;
   width: 50%;
-  background-color: var(--red);
+  background-color: var(--bg-yellow);
   bottom: 100%;
   left: 25%;
   transition: 0.5s transform;

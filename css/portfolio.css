@@ -1,9 +1,9 @@
 .intro-wrapper {
-  background-color: var(--primary);
-  color: white;
+  background-color: var(--bg-yellow);
 }
-
+.heading-intro {
+  color: black;
+}
 .fa-arrow-circle-left {
   font-size: 3em;
-  color: var(--secondary);
 }

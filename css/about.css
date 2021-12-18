@@ -1,8 +1,8 @@
 .intro-wrapper {
-  background-color: var(--red);
+  background-color: var(--bg-red);
   color: white;
 }
 .fa-arrow-circle-left {
   font-size: 3em;
-  color: var(--red);
+  color: white;
 }

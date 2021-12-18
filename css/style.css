@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Amita&family=Delius&family=Overpass:wght@300&display=swap");
 :root {
-  --button: #6f77f4;
-  --red: #db3157;
-  --secondary: #ffd845;
-  --button-primary: #ccf381;
+  --bg-red: #db3157;
+  --bg-yellow: #ffd845;
+
   --light: #f0f0f0;
-  --dark-blue: #3a47d5;
+  --bg-light-purple: #6f77f4;
+  --button-primary: #3a47d5;
+  --button-secondary: #ccf381;
+
   --light-box-shadow: 2px 2px 24px white;
+  --dark-box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -30,10 +33,6 @@ body {
     "footer footer footer footer footer footer";
   overflow-x: hidden;
   position: relative;
-  color: var(--light);
-  background: url("/images/bg.svg") no-repeat center left;
-  background-size: cover;
-  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
 }
 
 header {
@@ -76,9 +75,8 @@ h1 {
 
 h2 {
   font-size: 3em;
-  color: white;
   margin-top: 40px;
-  border-bottom: 1px solid var(--button-primary);
+  border-bottom: 1px solid var(--bg-light-purple);
 }
 
 h3 {
@@ -86,7 +84,6 @@ h3 {
 }
 h4 {
   font-size: 1.3em;
-  color: var(--secondary);
 }
 
 /* global grid and flex */
@@ -113,11 +110,12 @@ header {
   position: relative;
   align-items: center;
   gap: 10px;
-  padding: 30px;
+  color: black;
+  box-shadow: var(--dark-box-shadow);
 }
 
 #logo {
-  width: 50%;
+  width: 80%;
 }
 /* pc navigation */
 ul {
@@ -133,7 +131,6 @@ nav ul li {
 }
 nav ul li a {
   font-size: 1.3em;
-  color: white;
 }
 nav ul li::before {
   content: "";
@@ -148,19 +145,36 @@ nav ul li::before {
 }
 
 nav ul li:hover::before {
-  box-shadow: var(--light-box-shadow);
-  border-radius: 8px;
+  box-shadow: var(--dark-box-shadow);
+  border-radius: 4px;
 }
 .contact-btn {
-  background-color: var(--button);
-  padding: 12px;
-  color: white;
+  border: 1px solid var(--button-primary);
+  padding: 16px;
   border-radius: 4px;
-  transition: 0.5s linear;
+  transition: 0.2s linear;
+  position: relative;
 }
-.contact-btn:hover {
-  background-color: transparent;
-  border: 1px solid var(--button);
+
+.contact-btn::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: "Contact";
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--button-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.4s transform;
+}
+.contact-btn:hover::after {
+  transform: scale(1);
 }
 /* mobile navigation */
 .navigation-mobile {
@@ -172,10 +186,10 @@ nav ul li:hover::before {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 4px;
   font-size: 0.8em;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-color: white;
 }
 .mobile-ul,
 .mobile-social-icons {
@@ -189,13 +203,13 @@ nav ul li:hover::before {
 .hamburger {
   position: absolute;
   right: 30px;
-  top: 40px;
+  top: 60px;
   font-size: 1.7em;
   display: none;
 }
 .active {
-  box-shadow: 2px 2px 24px white;
-  border-radius: 8px;
+  box-shadow: var(--dark-box-shadow);
+  border-radius: 4px;
   pointer-events: none;
 }
 
@@ -206,8 +220,7 @@ nav ul li:hover::before {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url("/images/main-bg.svg") no-repeat center left;
-  background-size: cover;
+  background-color: var(--bg-light-purple);
 }
 
 .heading-intro {
@@ -218,6 +231,7 @@ nav ul li:hover::before {
   align-items: center;
   animation: 1s forwards slider;
   opacity: 0;
+  color: white;
 }
 .intro {
   display: flex;
@@ -255,6 +269,7 @@ nav ul li:hover::before {
 main {
   position: relative;
   padding: 16px;
+  background-color: var(--light);
 }
 /* wrapper for h2, intro and all sites*/
 .sites-wrapper {
@@ -272,24 +287,22 @@ main {
 }
 /* sub wrapper sections for project sites */
 .sites-wrapper img {
-  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--dark-box-shadow);
 }
 
 .active-tab {
   transition: 0.4s linear;
-  background: var(--button-primary);
-  color: black;
-  font-weight: bold;
+  border-bottom: 5px solid var(--button-primary);
   cursor: default;
+  pointer-events: none;
 }
 
 .tabs {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
   box-shadow: 4px 4px 25px rgba(255, 255, 255, 0.4);
-  border-bottom: 1px solid var(--button-primary);
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
 button {
@@ -297,15 +310,28 @@ button {
   border: none;
   padding: 16px;
   cursor: pointer;
-  color: white;
   font-size: 1.2em;
-  transition: 0.3s linear;
+  transition: 0.6s linear;
   flex: 1;
+  position: relative;
 }
-button:hover {
-  background: var(--button-primary);
-  color: black;
-  font-weight: bold;
+
+button::after {
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 5px;
+  position: absolute;
+  background-color: var(--button-primary);
+  bottom: 0px;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: bottom;
+  transition: 0.7s transform;
+}
+button:hover::after {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .site-one-wrapper,
@@ -315,9 +341,8 @@ button:hover {
   display: none;
   flex-direction: column;
   gap: 40px;
-  background-color: var(--light);
-  color: white;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  box-shadow: var(--dark-box-shadow);
+  background-color: white;
 }
 .site-one-wrapper {
   display: flex;
@@ -327,6 +352,7 @@ button:hover {
   list-style-type: square;
   display: inline-block;
   margin-left: 20px;
+  text-align: left;
 }
 .all-sites {
   opacity: 0;
@@ -336,13 +362,13 @@ button:hover {
 .fa-github,
 .fa-external-link-alt {
   padding: 12px;
-  background: var(--button);
+  background: var(--button-primary);
   color: white;
   font-size: 0.7em;
 }
 .fa-github:hover,
 .fa-external-link-alt:hover {
-  color: var(--secondary);
+  color: var(--bg-red);
 }
 /* skills section */
 .skills {
@@ -357,6 +383,8 @@ button:hover {
   margin: 80px auto;
   font-size: 1.1em;
   gap: 50px;
+
+  padding: 12px;
 }
 .skills h2 {
   grid-column: 1/-1;
@@ -373,7 +401,7 @@ button:hover {
 /* global footer */
 footer {
   grid-area: footer;
-  border-top: 1px solid var(--button-primary);
+  border-top: 1px solid var(--bg-light-purple);
   padding: 20px;
   text-align: center;
   margin: 80px;
@@ -387,11 +415,11 @@ footer {
   right: 50px;
   bottom: 200px;
   font-size: 1em;
-  color: black;
   background-color: var(--button-primary);
-  padding: 2px 6px;
+  padding: 4px 6px;
   cursor: pointer;
   border-radius: 50%;
+  color: white;
 }
 
 /* social icons in footer section */
@@ -405,9 +433,8 @@ footer {
   padding: 12px;
   text-align: center;
   transition: 0.5s ease;
-  color: var(--light);
 }
 .social-icons .fab:hover,
 .social-icons .fas:hover {
-  box-shadow: var(--light-box-shadow);
+  box-shadow: var(--dark-box-shadow);
 }
