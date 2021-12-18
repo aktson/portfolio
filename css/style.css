@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Amita&family=Delius&family=Overpass:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Jost&display=swap");
+
 :root {
   --bg-red: #db3157;
   --bg-yellow: #ffd845;
@@ -53,7 +54,8 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Amita", cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -66,7 +68,12 @@ p,
 .cta,
 button {
   font-family: "Overpass", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.1em;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-size: 1.2em;
+}
+p {
+  font-size: 1.3em;
   line-height: 1.8em;
 }
 h1 {
@@ -83,7 +90,7 @@ h3 {
   font-size: 2em;
 }
 h4 {
-  font-size: 1.3em;
+  font-size: 1.7em;
 }
 
 /* global grid and flex */
@@ -283,7 +290,7 @@ main {
 }
 
 .sites-wrapper h3 {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 /* sub wrapper sections for project sites */
 .sites-wrapper img {
@@ -298,11 +305,12 @@ main {
 }
 
 .tabs {
-  box-shadow: 4px 4px 25px rgba(255, 255, 255, 0.4);
+  /* box-shadow: 0px 4px 25px rgba(255, 255, 255, 0.4); */
   margin-top: 40px;
   display: flex;
   justify-content: center;
   gap: 20px;
+  background-color: white;
 }
 
 button {
@@ -310,9 +318,9 @@ button {
   border: none;
   padding: 16px;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.5em;
   transition: 0.6s linear;
-  flex: 1;
+
   position: relative;
 }
 
