@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Amita&family=Delius&family=Overpass:wght@300&display=swap");
 :root {
-  --primary: #6f77f4;
+  --button: #6f77f4;
   --red: #db3157;
   --secondary: #ffd845;
   --button-primary: #ccf381;
   --light: #f0f0f0;
-  --button: #3a47d5;
+  --dark-blue: #3a47d5;
   --light-box-shadow: 2px 2px 24px white;
 }
 
@@ -151,24 +151,16 @@ nav ul li:hover::before {
   box-shadow: var(--light-box-shadow);
   border-radius: 8px;
 }
-/* social icons in header section */
-.social-icons {
-  font-size: 1.2em;
-  display: flex;
-  gap: 10px;
-}
-.social-icons .fab,
-.social-icons .fas {
-  border: 1px solid white;
+.contact-btn {
+  background-color: var(--button);
   padding: 12px;
-  border-radius: 50%;
-  text-align: center;
   color: white;
-  transition: 0.5s ease;
+  border-radius: 4px;
+  transition: 0.5s linear;
 }
-.social-icons .fab:hover,
-.social-icons .fas:hover {
-  box-shadow: var(--light-box-shadow);
+.contact-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--button);
 }
 /* mobile navigation */
 .navigation-mobile {
@@ -340,6 +332,18 @@ button:hover {
   opacity: 0;
   transition: 1s opacity;
 }
+/* buttons for external links */
+.fa-github,
+.fa-external-link-alt {
+  padding: 12px;
+  background: var(--button);
+  color: white;
+  font-size: 0.7em;
+}
+.fa-github:hover,
+.fa-external-link-alt:hover {
+  color: var(--secondary);
+}
 /* skills section */
 .skills {
   align-items: center;
@@ -374,12 +378,15 @@ footer {
   text-align: center;
   margin: 80px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .to-top {
   position: absolute;
   right: 50px;
-  bottom: 50px;
-  font-size: 1.5em;
+  bottom: 200px;
+  font-size: 1em;
   color: black;
   background-color: var(--button-primary);
   padding: 2px 6px;
@@ -387,14 +394,20 @@ footer {
   border-radius: 50%;
 }
 
-.fa-github,
-.fa-external-link-alt {
-  padding: 12px;
-  background: var(--primary);
-  color: white;
-  font-size: 0.7em;
+/* social icons in footer section */
+.social-icons {
+  font-size: 1.3em;
+  display: flex;
+  gap: 10px;
 }
-.fa-github:hover,
-.fa-external-link-alt:hover {
-  color: var(--secondary);
+.social-icons .fab,
+.social-icons .fas {
+  padding: 12px;
+  text-align: center;
+  transition: 0.5s ease;
+  color: var(--light);
+}
+.social-icons .fab:hover,
+.social-icons .fas:hover {
+  box-shadow: var(--light-box-shadow);
 }
