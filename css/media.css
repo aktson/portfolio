@@ -1,6 +1,6 @@
 @media only screen and (max-width: 636px) {
-  body {
-    grid-template-columns: auto;
+  p {
+    font-size: 1em;
   }
   .hamburger {
     display: block;
@@ -16,6 +16,7 @@
   }
   .sites-wrapper {
     padding: 0;
+    margin: 0 20px;
   }
   .tabs {
     padding: 10px;

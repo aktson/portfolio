@@ -26,12 +26,11 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
-  grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
-    "header  header header header header header"
-    "intro intro intro intro intro intro"
-    "main main main main main main"
-    "footer footer footer footer footer footer";
+    "header"
+    "intro"
+    "main"
+    "footer";
   overflow-x: hidden;
   position: relative;
 }
@@ -193,6 +192,7 @@ nav ul li:hover::before {
   position: fixed;
   width: 125px;
   height: 100vh;
+  top: 0;
   transform: translateX(-100%);
   transition: 0.5s transform;
   text-align: center;
