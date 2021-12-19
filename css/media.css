@@ -26,6 +26,7 @@
   }
   .tabs {
     flex-direction: column;
+    box-shadow: var(--dark-box-shadow);
   }
   button {
     font-size: 1.2em;
