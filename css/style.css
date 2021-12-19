@@ -203,6 +203,7 @@ nav ul li:hover::before {
   font-size: 0.8em;
   background-color: white;
   box-shadow: var(--dark-box-shadow);
+  display: none;
 }
 .mobile-ul,
 .mobile-social-icons {

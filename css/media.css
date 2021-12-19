@@ -1,4 +1,7 @@
 @media only screen and (max-width: 636px) {
+  /* body {
+    justify-items: center;
+  } */
   p {
     font-size: 1em;
   }
@@ -7,6 +10,9 @@
   }
   .pc-navigation {
     display: none;
+  }
+  .navigation-mobile {
+    display: flex;
   }
   h1 {
     font-size: 2.5em;
