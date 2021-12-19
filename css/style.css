@@ -70,7 +70,7 @@ button {
   font-family: "Overpass", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-family: "Noto Sans", sans-serif;
   font-family: "Jost", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 p {
   font-size: 1.3em;
@@ -134,7 +134,7 @@ ul {
 }
 nav ul li {
   position: relative;
-  padding: 8px;
+  padding: 16px;
 }
 nav ul li a {
   font-size: 1.3em;
@@ -155,9 +155,15 @@ nav ul li:hover::before {
   box-shadow: var(--dark-box-shadow);
   border-radius: 4px;
 }
+.active {
+  box-shadow: var(--dark-box-shadow);
+  border-radius: 4px;
+  pointer-events: none;
+  padding: 16px;
+}
 .contact-btn {
   border: 1px solid var(--button-primary);
-  padding: 16px;
+  padding: 16px 32px;
   border-radius: 4px;
   transition: 0.2s linear;
   position: relative;
@@ -213,11 +219,6 @@ nav ul li:hover::before {
   top: 60px;
   font-size: 1.7em;
   display: none;
-}
-.active {
-  box-shadow: var(--dark-box-shadow);
-  border-radius: 4px;
-  pointer-events: none;
 }
 
 /* intro section */

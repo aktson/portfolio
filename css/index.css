@@ -3,7 +3,7 @@
   content: "";
   padding: 4px;
   width: 50%;
-  background-color: var(--bg-yellow);
+  background-color: var(--bg-red);
   top: 100%;
   left: 25%;
   transition: 0.5s transform;
