@@ -20,6 +20,10 @@
   button {
     padding: 8px;
   }
+  .intro-wrapper {
+    height: 90vh;
+    margin: 0 20px;
+  }
   main {
     margin: 10px;
   }
@@ -36,6 +40,10 @@
   }
   .pc-navigation {
     display: none;
+  }
+  .intro-wrapper {
+    height: 90vh;
+    margin: 0 40px;
   }
   main {
     margin: 10px;

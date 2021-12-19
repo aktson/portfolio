@@ -118,7 +118,6 @@ header {
   align-items: center;
   gap: 10px;
   color: black;
-  box-shadow: var(--dark-box-shadow);
 }
 
 #logo {
@@ -203,6 +202,7 @@ nav ul li:hover::before {
   padding: 4px;
   font-size: 0.8em;
   background-color: white;
+  box-shadow: var(--dark-box-shadow);
 }
 .mobile-ul,
 .mobile-social-icons {
@@ -228,7 +228,8 @@ nav ul li:hover::before {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: var(--bg-light-purple);
+  background-color: var(--bg-yellow);
+  margin: 0 80px;
 }
 
 .heading-intro {
@@ -239,7 +240,6 @@ nav ul li:hover::before {
   align-items: center;
   animation: 1s forwards slider;
   opacity: 0;
-  color: white;
 }
 .intro {
   display: flex;

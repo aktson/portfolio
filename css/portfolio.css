@@ -1,9 +1,10 @@
 .intro-wrapper {
-  background-color: var(--bg-yellow);
+  background-color: var(--bg-light-purple);
 }
 .heading-intro {
-  color: black;
+  color: white;
 }
 .fa-arrow-circle-left {
   font-size: 3em;
+  color: white;
 }
