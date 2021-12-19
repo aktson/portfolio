@@ -56,6 +56,9 @@
   .pc-navigation {
     display: none;
   }
+  .navigation-mobile {
+    display: flex;
+  }
   .intro-wrapper {
     height: 90vh;
     margin: 0 40px;
