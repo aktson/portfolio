@@ -25,17 +25,22 @@
     margin: 0 20px;
   }
   .tabs {
-    padding: 10px;
+    flex-direction: column;
   }
   button {
-    padding: 8px;
+    font-size: 1.2em;
   }
+  .active-tab {
+    background-color: var(--button-primary);
+    color: white;
+  }
+
   .intro-wrapper {
     height: 90vh;
     margin: 0 20px;
   }
   main {
-    padding: 16px;
+    padding: 8px;
   }
   .skills-content {
     grid-template-columns: repeat(2, 1fr);

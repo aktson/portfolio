@@ -27,6 +27,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: auto;
   grid-template-areas:
     "header"
     "intro"
@@ -190,8 +191,8 @@ nav ul li:hover::before {
 /* mobile navigation */
 .navigation-mobile {
   position: fixed;
-  width: 125px;
-  height: 100vh;
+  width: 150px;
+  min-height: 100vh;
   top: 0;
   transform: translateX(-100%);
   transition: 0.5s transform;
@@ -321,7 +322,6 @@ button {
   cursor: pointer;
   font-size: 1.5em;
   transition: 0.6s linear;
-
   position: relative;
 }
 
@@ -446,4 +446,7 @@ footer {
 .social-icons .fab:hover,
 .social-icons .fas:hover {
   box-shadow: var(--dark-box-shadow);
+}
+.hidden {
+  display: none;
 }
