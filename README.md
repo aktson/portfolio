@@ -1,7 +1,9 @@
 # portfolio 1
 
 Goal
+
 As a developer it's often a good idea to re-visit work and solutions along the way. Developers are constantly growing in experience and understanding of languages and tasks, so it is essential that you self-assess and make improvements.
+
 Brief
 
 In this assignment, you are will present three submissions from the first year: your cross-course project, Semester Project 1, and Project Exam 1.
